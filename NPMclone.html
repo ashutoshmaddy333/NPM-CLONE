@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simplified NPM-like Header with Black Heart</title>
+    <style> body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    .header {
+        display: flex;
+        align-items: center;      /*HEADER CSS */
+        padding: 0.5rem 1rem;
+        border-bottom: 1px solid #e5e5e5;
+    }
+
+    .heart-icon {
+        color: #000000;
+        /* Changed to black */
+        font-size: 1.2rem;
+        margin-right: 1rem;
+    }
+
+    .nav {
+        display: flex;
+        gap: 1.5rem;         /*NAV CSS */
+    }
+
+    .nav a {
+        color: #000000;
+        text-decoration: none;
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+
+    .nav a:hover {
+        color: #cb3837;
+    }
+
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    .header {
+        display: flex;
+        align-items: center;
+        padding: 0.5rem 1rem;
+        border-bottom: 1px solid #e5e5e5;
+    }
+
+    .logo {
+        font-weight: bold;
+        font-size: 1.5rem;
+        margin-right: 1rem;
+    }
+
+    .search-container {
+        display: flex;
+        flex-grow: 1;
+        margin: 0 1rem;    /*SEARCH-CONTAINER CSS */
+        position: relative;
+    }
+
+    .search-icon {
+        position: absolute;
+        left: 10px;
+        top: 50%;                   /*SEARCH-ICON CSS */
+        transform: translateY(-50%);
+        color: #757575;
+        font-size: 1rem;
+    }
+
+    .search-input {
+        flex-grow: 1;
+        padding: 0.5rem 0.5rem 0.5rem 2rem;
+        border: 1px solid #ccc;             /*SEARCH-INPUT CSS */
+        border-right: none;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+    }
+
+    .search-button {
+        padding: 0.5rem 1rem;
+        background-color: #333;
+        color: white;                          /*SEARCH-BUTTON CSS */
+        border: none;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+        cursor: pointer;
+    }
+
+    .auth-buttons {
+        display: flex;                          /*AUTH BUTTON CSS */
+        gap: 0.5rem;
+    }
+
+    .auth-button {
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+        border-radius: 4px;
+        font-size: 0.9rem;
+    }
+
+    .sign-up {
+        background-color: white;
+        color: #333;                           /*SIGN UP CSS */
+        border: 1px solid #ccc;
+    }
+
+    .sign-in {
+        background-color: white;                /*SIGN CSS */
+        color: #333;
+        border: none;
+    }
+    
+.bg-cont {
+background-image: url('https://yt3.ggpht.com/d1NHsz5qNEpzOhOThIDqEW64E1lhbD776yDvVgpv8NVIHgSma87ItHZC9lXsIpGOZsPzZytA0OF8fQ=s862-c-fcrop64=1,3aff0000c500ffff-rw-nd-v1');
+background-size: cover;                              
+background-position: center;                 /*BACKGROUND CONT CSS */
+padding: 40px 0px;
+}
+
+.home-heading {
+font-size: 100px;
+font-weight: bold;
+letter-spacing: 1px;                        /*HOME-HEADDING CSS */
+color: #fff;
+text-align: center;
+padding: 0px 100px;
+}
+
+.home-sub-heading {
+font-size: 50px;
+font-weight: bold;
+letter-spacing: 1px;                        
+color: #fff;                                 /*HOME-SUB-HEADDING CSS */
+padding: 0px 100px;
+text-align: center;
+}
+
+.home-intro {
+font-size: 20px;
+color: #fff;                                    /*HOME-INTRO CSS */
+letter-spacing: 1px;
+padding: 0px 100px;
+}
+
+.home-button {
+display: flex;                                    /*HOME-BUTTON CSS */
+justify-content: center;
+margin: 50px 0px;
+}
+
+.home-btn {
+padding: 20px 50px;
+border: 0;
+border-radius: 40px;
+font-size: 25px;
+color: #222;
+font-weight: 700;
+background: yellow;
+cursor: pointer;
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);               /*HOME-BTN CSS */
+                                                                       
+}
+
+.home-btn1 {
+margin-left: 40px;
+padding: 20px 50px;
+border: 3px solid #fff;
+border-radius: 40px;                                          /*HOME-btn1 CSS */
+background: transparent;
+font-size: 25px;
+color: #fff;
+font-weight: 700;
+cursor: pointer;
+}
+
+
+
+.about-section {
+background: #fff;                                            /*ABOUT SECTION CSS */
+background-size: cover;
+padding: 100px 0px;
+}
+
+.about-images {
+display: flex;
+justify-content: center;                                        /*ABOUT IMAGE CSS */
+align-items: center;
+margin: 30px 0px;
+}
+
+.about-heading {
+font-size: 50px;
+font-weight: bold;
+letter-spacing: 1px;                                               /*ABOUT HEADING CSS */
+color: #222;
+text-align: center;
+padding: 0px 100px;
+}
+
+.about-intro {
+font-size: 20px;
+font-weight: 500;                                                  /*ABOUT INTRO CSS */
+color: #333;
+padding: 0px 100px;
+text-align: center;
+}
+
+
+.footer-section {
+background: #fff;                                                  /*FOOTER SECTION CSS */
+padding: 40px;
+}
+
+.footer-wrapper {
+display: flex;                                                       /*FOOTER WRAPPER CSS */
+justify-content: space-between;
+flex-wrap: wrap;
+}
+
+.footer-sub-sec { 
+display: flex;                                                         /*FOOTER SUB-SEC CSS */
+flex-direction: column;
+
+}
+
+.footer-sub-sec a {
+font-size: 20px;
+color: #333;
+font-weight: 700;                                                       /*FOOTER SUB-SEC a CSS */
+list-style: none;
+text-decoration: none;
+padding: 10px 20px;
+}
+
+.footer-sub-sec h3 {
+font-size: 30px;
+color: #111;
+font-weight: 700;                                                        /*FOOTER SUB-SEC h3 CSS */
+letter-spacing: 1px;
+padding-left: 20px;
+}</style>
+</head>
+
+<header class="header">
+    <div class="heart-icon">♥</div>
+    <nav class="nav">
+        <a href="#">Pro</a>
+        <a href="#">Teams</a>                      
+        <a href="#">Pricing</a>
+        <a href="#">Documentation</a>
+    </nav>
+
+</header>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">npm</div>
+        <div class="search-container">
+            <span class="search-icon">🔍</span>
+            <input type="text" class="search-input" placeholder="Search packages">     
+            <button class="search-button">Search</button>
+        </div>
+        <div class="auth-buttons">
+            <button class="auth-button sign-up">Sign Up</button>
+            <button class="auth-button sign-in">Sign In</button>
+        </div>
+    </header>
+    <!--home-page-->               
+    <div class="bg-cont">
+        <h1 class="home-heading">Build amazing things</h1>
+        <p class="home-intro">We're GitHub, the company behind the npm Registry and npm CLI. We offer those to the community for free, but our day job is building and selling useful tools for developers like you.</p>
+        <h3 class="home-sub-heading">Take your JavaScript development up a notch</h3>
+
+        <p class="home-intro">Get started today for free, or step up to npm Pro to enjoy a premium JavaScript development experience, with features like private packages.</p>
+        <div class="home-button">
+            <button class="home-btn">sign up for free</button>
+            <button class="home-btn1">Learn about pro</button>
+        </div>
+    </div>
+    <!--about-section-->
+    <div class="about-section">
+        <div class="about-images">
+            <img class="" src="https://yt3.ggpht.com/n-p_OYG2qvHNLCFi0Jj9CVKAgiFYBPtm6FP9EOoaFRqglSzo91by5YOvlUtA_3vYwUzEB8ldFIOO=s192-c-fcrop64=1,0f440000f0bbffff-rw-nd-v1" alt="" />
+        </div>
+        <h1 class="about-heading">Bring the best of open source to you, your team, and your company</h1>
+        <p class="about-intro">Relied upon by more than 17 million developers worldwide, npm is committed to making JavaScript development elegant, productive, and safe. The free npm Registry has become the center of JavaScript code sharing, and with more than two million packages, the largest software registry in the world. Our other tools and services take the Registry, and the work you do around it, to the next level.</p>
+    </div>
+    <!--footer-section-->
+    <hr />
+    <div class="footer-section">
+        <div class="footer-wrapper">
+            <div class="footer-sub-sec">
+                <h3 class="">support</h3>
+                <a class="" href="#">Help</a>
+                <a class="" href="#">Advisories</a>
+                <a class="" href="#">Status</a>
+                <a class="" href="#">Contact NPM</a>
+            </div>
+            <div class="footer-sub-sec">
+                <h3 class="">Company</h3>
+                <a class="" href="#">About</a>
+                <a class="" href="#">Blog</a>
+                <a class="" href="#">Press</a>
+
+            </div>
+            <div class="footer-sub-sec">
+                <h3 class="">Term & Policies</h3>
+                <a class="" href="#">Policies</a>
+                <a class="" href="#">Terms of Use</a>
+                <a class="" href="#">Code of Conduct</a>
+                <a class="" href="#">privacy</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
